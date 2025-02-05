@@ -1,11 +1,12 @@
 ---
-title: XRReferenceSpaceEvent.transform
+title: "XRReferenceSpaceEvent: transform property"
+short-title: transform
 slug: Web/API/XRReferenceSpaceEvent/transform
 page-type: web-api-instance-property
 browser-compat: api.XRReferenceSpaceEvent.transform
 ---
 
-{{APIRef("WebXR Device API")}}
+{{APIRef("WebXR Device API")}}{{SecureContext_Header}}
 
 The read-only {{domxref("XRReferenceSpaceEvent")}} property
 **`transform`** indicates the position and orientation of the
@@ -29,7 +30,7 @@ system. Alternatively, you can just discard any cached positional information an
 recompute from scratch. The approach you take will depend on your needs.
 
 For details on what causes a `reset` event and how to respond, see the
-{{domxref("XRReferenceSpaceEvent.reset_event", "reset")}} event's documentation.
+{{domxref("XRReferenceSpace.reset_event", "reset")}} event's documentation.
 
 ## Examples
 

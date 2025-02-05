@@ -1,23 +1,9 @@
 ---
-title: MediaTrackSupportedConstraints.logicalSurface
+title: "MediaTrackSupportedConstraints: logicalSurface property"
+short-title: logicalSurface
 slug: Web/API/MediaTrackSupportedConstraints/logicalSurface
 page-type: web-api-instance-property
-tags:
-  - API
-  - Capture
-  - Logical
-  - Media
-  - Media Capture and Streams
-  - Media Capture and Streams API
-  - Reference
-  - Screen Capture
-  - Screen Capture API
-  - Sharing
-  - Surface
-  - Video
-  - display
-  - screen
-browser-compat: api.MediaTrackSupportedConstraints.logicalSurface
+browser-compat: api.MediaStreamTrack.applyConstraints.logicalSurface_constraint
 ---
 
 {{APIRef("Media Capture and Streams")}}
@@ -25,12 +11,6 @@ browser-compat: api.MediaTrackSupportedConstraints.logicalSurface
 The {{domxref("MediaTrackSupportedConstraints")}} dictionary's **`logicalSurface`** property indicates whether or not the {{domxref("MediaTrackConstraints.logicalSurface", "logicalSurface")}} constraint is supported by the user agent and the device on which the content is being used.
 
 The supported constraints list is obtained by calling {{domxref("MediaDevices.getSupportedConstraints","navigator.mediaDevices.getSupportedConstraints()")}}.
-
-## Syntax
-
-```js-nolint
-isLogicalSurfaceSupported = supportedConstraints.logicalSurface
-```
 
 ### Value
 
@@ -51,7 +31,7 @@ async function capture() {
   const supportedConstraints = navigator.mediaDevices.getSupportedConstraints();
   const displayMediaOptions = {
     video: {},
-    audio: false
+    audio: false,
   };
 
   if (supportedConstraints.logicalSurface) {
@@ -59,7 +39,8 @@ async function capture() {
   }
 
   try {
-    videoElem.srcObject = await navigator.mediaDevices.getDisplayMedia(displayMediaOptions);
+    videoElem.srcObject =
+      await navigator.mediaDevices.getDisplayMedia(displayMediaOptions);
   } catch (err) {
     /* handle the error */
   }

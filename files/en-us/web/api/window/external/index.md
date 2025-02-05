@@ -1,13 +1,10 @@
 ---
-title: Window.external
+title: "Window: external property"
+short-title: external
 slug: Web/API/Window/external
 page-type: web-api-instance-property
-tags:
-  - API
-  - property
-  - Window
-  - external
-  - Deprecated
+status:
+  - deprecated
 browser-compat: api.Window.external
 ---
 
@@ -31,7 +28,7 @@ The `External` object has the following methods:
       </td>
       <td>
         Dummy function; does nothing. See
-        <a href="/en-US/docs/Web/OpenSearch#autodiscovery_of_search_plugins"
+        <a href="/en-US/docs/Web/XML/Guides/OpenSearch#autodiscovery_of_search_plugins"
           >Autodiscovery of search plugins</a
         >.
       </td>
