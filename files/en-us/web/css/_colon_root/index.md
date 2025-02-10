@@ -1,17 +1,7 @@
 ---
-title: ":root"
+title: :root
 slug: Web/CSS/:root
 page-type: css-pseudo-class
-tags:
-  - CSS
-  - Element
-  - Layout
-  - Node
-  - Pseudo-class
-  - Reference
-  - Selector
-  - Web
-  - root
 browser-compat: css.selectors.root
 ---
 

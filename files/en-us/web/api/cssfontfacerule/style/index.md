@@ -1,14 +1,8 @@
 ---
-title: CSSFontFaceRule.style
+title: "CSSFontFaceRule: style property"
+short-title: style
 slug: Web/API/CSSFontFaceRule/style
 page-type: web-api-instance-property
-tags:
-  - API
-  - CSSOM
-  - CSSFontFaceRule
-  - Property
-  - Reference
-  - Read-only
 browser-compat: api.CSSFontFaceRule.style
 ---
 
@@ -27,7 +21,8 @@ This example uses the CSS found as an example on the {{cssxref("@font-face")}} p
 ```css
 @font-face {
   font-family: MyHelvetica;
-  src: local("Helvetica Neue Bold"), local("HelveticaNeue-Bold"),
+  src:
+    local("Helvetica Neue Bold"), local("HelveticaNeue-Bold"),
     url(MgOpenModernaBold.ttf);
   font-weight: bold;
 }
