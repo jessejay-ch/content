@@ -1,19 +1,7 @@
 ---
-title: '<strong>: The Strong Importance element'
+title: "<strong>: The Strong Importance element"
 slug: Web/HTML/Element/strong
 page-type: html-element
-tags:
-  - Element
-  - HTML
-  - HTML text-level semantics
-  - HTML:Flow content
-  - HTML:Palpable Content
-  - HTML:Phrasing content
-  - Reference
-  - Strong Importance
-  - Urgency
-  - Web
-  - strong
 browser-compat: html.elements.strong
 ---
 
@@ -21,7 +9,21 @@ browser-compat: html.elements.strong
 
 The **`<strong>`** [HTML](/en-US/docs/Web/HTML) element indicates that its contents have strong importance, seriousness, or urgency. Browsers typically render the contents in bold type.
 
-{{EmbedInteractiveExample("pages/tabbed/strong.html", "tabbed-shorter")}}
+{{InteractiveExample("HTML Demo: &lt;strong&gt;", "tabbed-shorter")}}
+
+```html interactive-example
+<p>
+  ... the most important rule, the rule you can never forget, no matter how much
+  he cries, no matter how much he begs:
+  <strong>never feed him after midnight</strong>.
+</p>
+```
+
+```css interactive-example
+p {
+  font-size: 1rem;
+}
+```
 
 ## Attributes
 
@@ -61,7 +63,7 @@ While `<em>` is used to change the meaning of a sentence as spoken emphasis does
 </p>
 ```
 
-The resulting output:
+#### Result
 
 {{EmbedLiveSample("Basic_example", 650, 80)}}
 
@@ -74,7 +76,7 @@ The resulting output:
 </p>
 ```
 
-This results in:
+#### Result
 
 {{EmbedLiveSample("Labeling_warnings", 650, 80)}}
 
@@ -84,15 +86,15 @@ This results in:
   <tbody>
     <tr>
       <th scope="row">
-        <a href="/en-US/docs/Web/Guide/HTML/Content_categories"
+        <a href="/en-US/docs/Web/HTML/Content_categories"
           >Content categories</a
         >
       </th>
       <td>
-        <a href="/en-US/docs/Web/Guide/HTML/Content_categories#flow_content"
+        <a href="/en-US/docs/Web/HTML/Content_categories#flow_content"
           >Flow content</a
         >,
-        <a href="/en-US/docs/Web/Guide/HTML/Content_categories#phrasing_content"
+        <a href="/en-US/docs/Web/HTML/Content_categories#phrasing_content"
           >phrasing content</a
         >, palpable content.
       </td>
@@ -100,7 +102,7 @@ This results in:
     <tr>
       <th scope="row">Permitted content</th>
       <td>
-        <a href="/en-US/docs/Web/Guide/HTML/Content_categories#phrasing_content"
+        <a href="/en-US/docs/Web/HTML/Content_categories#phrasing_content"
           >Phrasing content</a
         >.
       </td>
@@ -113,10 +115,10 @@ This results in:
       <th scope="row">Permitted parents</th>
       <td>
         Any element that accepts
-        <a href="/en-US/docs/Web/Guide/HTML/Content_categories#phrasing_content"
+        <a href="/en-US/docs/Web/HTML/Content_categories#phrasing_content"
           >phrasing content</a
         >, or any element that accepts
-        <a href="/en-US/docs/Web/Guide/HTML/Content_categories#flow_content"
+        <a href="/en-US/docs/Web/HTML/Content_categories#flow_content"
           >flow content</a
         >.
       </td>
@@ -124,8 +126,9 @@ This results in:
     <tr>
       <th scope="row">Implicit ARIA role</th>
       <td>
-        <a href="https://www.w3.org/TR/html-aria/#dfn-no-corresponding-role"
-          >No corresponding role</a
+        <code
+          ><a href="/en-US/docs/Web/Accessibility/ARIA/Roles/structural_roles#structural_roles_with_html_equivalents">strong</a
+          ></code
         >
       </td>
     </tr>

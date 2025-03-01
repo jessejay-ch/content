@@ -1,15 +1,7 @@
 ---
-title: '<rt>: The Ruby Text element'
+title: "<rt>: The Ruby Text element"
 slug: Web/HTML/Element/rt
 page-type: html-element
-tags:
-  - Element
-  - HTML
-  - HTML text-level semantics
-  - Reference
-  - Ruby
-  - Text
-  - Web
 browser-compat: html.elements.rt
 ---
 
@@ -17,7 +9,19 @@ browser-compat: html.elements.rt
 
 The **`<rt>`** [HTML](/en-US/docs/Web/HTML) element specifies the ruby text component of a ruby annotation, which is used to provide pronunciation, translation, or transliteration information for East Asian typography. The `<rt>` element must always be contained within a {{HTMLElement("ruby")}} element.
 
-{{EmbedInteractiveExample("pages/tabbed/rt.html", "tabbed-shorter")}}
+{{InteractiveExample("HTML Demo: &lt;rt&gt;", "tabbed-shorter")}}
+
+```html interactive-example
+<ruby>
+  漢 <rp>(</rp><rt>kan</rt><rp>)</rp> 字 <rp>(</rp><rt>ji</rt><rp>)</rp>
+</ruby>
+```
+
+```css interactive-example
+ruby {
+  font-size: 2em;
+}
+```
 
 See the article about the {{HTMLElement("ruby")}} element for more examples.
 
@@ -29,13 +33,10 @@ This element only includes the [global attributes](/en-US/docs/Web/HTML/Global_a
 
 ### Using ruby annotations
 
-This simple example provides Romaji transliteration for the kanji characters within the {{HTMLElement("ruby")}} element:
+This example provides Romaji transliteration for the kanji characters within the {{HTMLElement("ruby")}} element:
 
 ```html
-<ruby>
-  漢 <rt>Kan</rt>
-  字 <rt>ji</rt>
-</ruby>
+<ruby> 漢 <rt>Kan</rt> 字 <rt>ji</rt> </ruby>
 ```
 
 ```css hidden
@@ -44,7 +45,7 @@ body {
 }
 ```
 
-The output looks like this in your browser:
+#### Result
 
 {{EmbedLiveSample("Using_ruby_annotations", 600, 60)}}
 
@@ -54,7 +55,7 @@ The output looks like this in your browser:
   <tbody>
     <tr>
       <th scope="row">
-        <a href="/en-US/docs/Web/Guide/HTML/Content_categories"
+        <a href="/en-US/docs/Web/HTML/Content_categories"
           >Content categories</a
         >
       </th>
@@ -63,7 +64,7 @@ The output looks like this in your browser:
     <tr>
       <th scope="row">Permitted content</th>
       <td>
-        <a href="/en-US/docs/Web/Guide/HTML/Content_categories#phrasing_content"
+        <a href="/en-US/docs/Web/HTML/Content_categories#phrasing_content"
           >Phrasing content</a
         >.
       </td>

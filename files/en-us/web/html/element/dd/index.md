@@ -1,18 +1,7 @@
 ---
-title: '<dd>: The Description Details element'
+title: "<dd>: The Description Details element"
 slug: Web/HTML/Element/dd
 page-type: html-element
-tags:
-  - Definition
-  - Description Details
-  - Description list
-  - Element
-  - HTML
-  - HTML grouping content
-  - Reference
-  - Web
-  - dd
-  - details
 browser-compat: html.elements.dd
 ---
 
@@ -20,14 +9,42 @@ browser-compat: html.elements.dd
 
 The **`<dd>`** [HTML](/en-US/docs/Web/HTML) element provides the description, definition, or value for the preceding term ({{HTMLElement("dt")}}) in a description list ({{HTMLElement("dl")}}).
 
-{{EmbedInteractiveExample("pages/tabbed/dd.html", "tabbed-standard")}}
+{{InteractiveExample("HTML Demo: &lt;dd&gt;", "tabbed-standard")}}
+
+```html interactive-example
+<p>Cryptids of Cornwall:</p>
+
+<dl>
+  <dt>Beast of Bodmin</dt>
+  <dd>A large feline inhabiting Bodmin Moor.</dd>
+
+  <dt>Morgawr</dt>
+  <dd>A sea serpent.</dd>
+
+  <dt>Owlman</dt>
+  <dd>A giant owl-like creature.</dd>
+</dl>
+```
+
+```css interactive-example
+p,
+dt {
+  font-weight: bold;
+}
+
+dl,
+dd {
+  font-size: 0.9rem;
+}
+
+dd {
+  margin-bottom: 1em;
+}
+```
 
 ## Attributes
 
-This element's attributes include the [global attributes](/en-US/docs/Web/HTML/Global_attributes).
-
-- {{htmlattrdef("nowrap")}} {{Non-standard_inline}} {{Deprecated_Inline}}
-  - : If the value of this attribute is set to `yes`, the definition text will not wrap. The default value is `no`.
+This element only includes the [global attributes](/en-US/docs/Web/HTML/Global_attributes).
 
 ## Examples
 
@@ -39,7 +56,7 @@ For examples, see the [examples provided for the `<dl>` element](/en-US/docs/Web
   <tbody>
     <tr>
       <th scope="row">
-        <a href="/en-US/docs/Web/Guide/HTML/Content_categories"
+        <a href="/en-US/docs/Web/HTML/Content_categories"
           >Content categories</a
         >
       </th>
@@ -48,7 +65,7 @@ For examples, see the [examples provided for the `<dl>` element](/en-US/docs/Web
     <tr>
       <th scope="row">Permitted content</th>
       <td>
-        <a href="/en-US/docs/Web/Guide/HTML/Content_categories#flow_content"
+        <a href="/en-US/docs/Web/HTML/Content_categories#flow_content"
           >Flow content</a
         >.
       </td>
@@ -68,13 +85,17 @@ For examples, see the [examples provided for the `<dl>` element](/en-US/docs/Web
         A {{HTMLElement("dl")}} or a
         {{HTMLElement("div")}} that is a child of a
         {{HTMLElement("dl")}}.<br />This element can be used after a
-        {{HTMLElement("dt")}} or another {{HTMLElement("dd")}}
+        {{HTMLElement("dt")}} or another <code>&lt;dd&gt;</code>
         element.
       </td>
     </tr>
     <tr>
       <th scope="row">Implicit ARIA role</th>
-      <td><a href="/en-US/docs/Web/Accessibility/ARIA/Roles/definition_role"><code>definition</code></a></td>
+      <td>
+        <a href="https://www.w3.org/TR/html-aria/#dfn-no-corresponding-role"
+          >No corresponding role</a
+        >
+        </td>
     </tr>
     <tr>
       <th scope="row">Permitted ARIA roles</th>

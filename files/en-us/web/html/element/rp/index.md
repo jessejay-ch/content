@@ -1,15 +1,7 @@
 ---
-title: '<rp>: The Ruby Fallback Parenthesis element'
+title: "<rp>: The Ruby Fallback Parenthesis element"
 slug: Web/HTML/Element/rp
 page-type: html-element
-tags:
-  - Element
-  - HTML
-  - HTML text-level semantics
-  - Reference
-  - Ruby
-  - Text
-  - Web
 browser-compat: html.elements.rp
 ---
 
@@ -17,7 +9,19 @@ browser-compat: html.elements.rp
 
 The **`<rp>`** [HTML](/en-US/docs/Web/HTML) element is used to provide fall-back parentheses for browsers that do not support display of ruby annotations using the {{HTMLElement("ruby") }} element. One `<rp>` element should enclose each of the opening and closing parentheses that wrap the {{HTMLElement("rt")}} element that contains the annotation's text.
 
-{{EmbedInteractiveExample("pages/tabbed/rp.html", "tabbed-shorter")}}
+{{InteractiveExample("HTML Demo: &lt;rp&gt;", "tabbed-shorter")}}
+
+```html interactive-example
+<ruby>
+  漢 <rp>(</rp><rt>kan</rt><rp>)</rp> 字 <rp>(</rp><rt>ji</rt><rp>)</rp>
+</ruby>
+```
+
+```css interactive-example
+ruby {
+  font-size: 2em;
+}
+```
 
 ## Attributes
 
@@ -35,8 +39,7 @@ This example uses ruby annotations to display the [Romaji](https://en.wikipedia.
 
 ```html
 <ruby>
-  漢 <rp>(</rp><rt>Kan</rt><rp>)</rp>
-  字 <rp>(</rp><rt>ji</rt><rp>)</rp>
+  漢 <rp>(</rp><rt>Kan</rt><rp>)</rp> 字 <rp>(</rp><rt>ji</rt><rp>)</rp>
 </ruby>
 ```
 
@@ -46,7 +49,7 @@ body {
 }
 ```
 
-The result looks like this in your browser:
+#### Result
 
 {{EmbedLiveSample("Using_ruby_annotations", 600, 60)}}
 
@@ -74,7 +77,7 @@ body {
   <tbody>
     <tr>
       <th scope="row">
-        <a href="/en-US/docs/Web/Guide/HTML/Content_categories"
+        <a href="/en-US/docs/Web/HTML/Content_categories"
           >Content categories</a
         >
       </th>
