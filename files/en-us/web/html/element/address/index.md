@@ -1,21 +1,7 @@
 ---
-title: '<address>: The Contact Address element'
+title: "<address>: The Contact Address element"
 slug: Web/HTML/Element/address
 page-type: html-element
-tags:
-  - Address
-  - Author
-  - Contact
-  - Contact Information
-  - Element
-  - Email
-  - Email Address
-  - HTML
-  - HTML sections
-  - HTML:Flow content
-  - HTML:Palpable Content
-  - Reference
-  - Web
 browser-compat: html.elements.address
 ---
 
@@ -23,7 +9,26 @@ browser-compat: html.elements.address
 
 The **`<address>`** [HTML](/en-US/docs/Web/HTML) element indicates that the enclosed HTML provides contact information for a person or people, or for an organization.
 
-{{EmbedInteractiveExample("pages/tabbed/address.html", "tabbed-standard")}}
+{{InteractiveExample("HTML Demo: &lt;address&gt;", "tabbed-standard")}}
+
+```html interactive-example
+<p>Contact the author of this page:</p>
+
+<address>
+  <a href="mailto:jim@example.com">jim@example.com</a><br />
+  <a href="tel:+14155550132">+1 (415) 555‑0132</a>
+</address>
+```
+
+```css interactive-example
+a[href^="mailto"]::before {
+  content: "📧 ";
+}
+
+a[href^="tel"]::before {
+  content: "📞 ";
+}
+```
 
 The contact information provided by an `<address>` element's contents can take whatever form is appropriate for the context, and may include any type of contact information that is needed, such as a physical address, URL, email address, phone number, social media handle, geographic coordinates, and so forth. The `<address>` element should include the name of the person, people, or organization to which the contact information refers.
 
@@ -46,9 +51,9 @@ This example demonstrates the use of `<address>` to demarcate the contact inform
 ```html
 <address>
   You can contact author at
-  <a href="http://www.somedomain.com/contact"> www.somedomain.com</a>.<br />
+  <a href="http://www.example.com/contact">www.example.com</a>.<br />
   If you see any bugs, please
-  <a href="mailto:webmaster@somedomain.com"> contact webmaster</a>.<br />
+  <a href="mailto:webmaster@example.com">contact webmaster</a>.<br />
   You may also want to visit us:<br />
   Mozilla Foundation<br />
   331 E Evelyn Ave<br />
@@ -69,12 +74,12 @@ Although it renders text with the same default styling as the {{HTMLElement("i")
   <tbody>
     <tr>
       <th scope="row">
-        <a href="/en-US/docs/Web/Guide/HTML/Content_categories"
+        <a href="/en-US/docs/Web/HTML/Content_categories"
           >Content categories</a
         >
       </th>
       <td>
-        <a href="/en-US/docs/Web/Guide/HTML/Content_categories#flow_content"
+        <a href="/en-US/docs/Web/HTML/Content_categories#flow_content"
           >Flow content</a
         >, palpable content.
       </td>
@@ -82,13 +87,13 @@ Although it renders text with the same default styling as the {{HTMLElement("i")
     <tr>
       <th scope="row">Permitted content</th>
       <td>
-        <a href="/en-US/docs/Web/Guide/HTML/Content_categories#flow_content"
+        <a href="/en-US/docs/Web/HTML/Content_categories#flow_content"
           >Flow content</a
         >, but with no nested <code>&#x3C;address></code> element, no heading
-        content ({{HTMLElement("hgroup")}}, {{HTMLElement("h1")}},
-        {{HTMLElement("h2")}}, {{HTMLElement("h3")}},
-        {{HTMLElement("h4")}}, {{HTMLElement("h5")}},
-        {{HTMLElement("h6")}}), no sectioning content
+        content ({{HTMLElement("hgroup")}}, {{HTMLElement("Heading_Elements", "h1")}},
+        {{HTMLElement("Heading_Elements", "h2")}}, {{HTMLElement("Heading_Elements", "h3")}},
+        {{HTMLElement("Heading_Elements", "h4")}}, {{HTMLElement("Heading_Elements", "h5")}},
+        {{HTMLElement("Heading_Elements", "h6")}}), no sectioning content
         ({{HTMLElement("article")}}, {{HTMLElement("aside")}},
         {{HTMLElement("section")}}, {{HTMLElement("nav")}}), and
         no {{HTMLElement("header")}} or {{HTMLElement("footer")}}
@@ -97,13 +102,13 @@ Although it renders text with the same default styling as the {{HTMLElement("i")
     </tr>
     <tr>
       <th scope="row">Tag omission</th>
-      <td>{{no_tag_omission}}</td>
+      <td>None, both the starting and ending tag are mandatory.</td>
     </tr>
     <tr>
       <th scope="row">Permitted parents</th>
       <td>
         Any element that accepts
-        <a href="/en-US/docs/Web/Guide/HTML/Content_categories#flow_content"
+        <a href="/en-US/docs/Web/HTML/Content_categories#flow_content"
           >flow content</a
         >, but always excluding <code>&#x3C;address></code> elements (according
         to the logical principle of symmetry, if
@@ -116,8 +121,10 @@ Although it renders text with the same default styling as the {{HTMLElement("i")
     <tr>
       <th scope="row">Implicit ARIA role</th>
       <td>
-        <a href="https://www.w3.org/TR/html-aria/#dfn-no-corresponding-role"
-          >No corresponding role</a
+        <code
+          ><a href="/en-US/docs/Web/Accessibility/ARIA/Roles/group_role"
+            >group</a
+          ></code
         >
       </td>
     </tr>
@@ -146,5 +153,5 @@ Although it renders text with the same default styling as the {{HTMLElement("i")
 
 ## See also
 
-- Others section-related elements: {{HTMLElement("body")}}, {{HTMLElement("nav")}}, {{HTMLElement("article")}}, {{HTMLElement("aside")}}, {{HTMLElement("h1")}}, {{HTMLElement("h2")}}, {{HTMLElement("h3")}}, {{HTMLElement("h4")}}, {{HTMLElement("h5")}}, {{HTMLElement("h6")}}, {{HTMLElement("hgroup")}}, {{HTMLElement("footer")}}, {{HTMLElement("section")}}, {{HTMLElement("header")}};
+- Others section-related elements: {{HTMLElement("body")}}, {{HTMLElement("nav")}}, {{HTMLElement("article")}}, {{HTMLElement("aside")}}, {{HTMLElement("Heading_Elements", "h1")}}, {{HTMLElement("Heading_Elements", "h2")}}, {{HTMLElement("Heading_Elements", "h3")}}, {{HTMLElement("Heading_Elements", "h4")}}, {{HTMLElement("Heading_Elements", "h5")}}, {{HTMLElement("Heading_Elements", "h6")}}, {{HTMLElement("hgroup")}}, {{HTMLElement("footer")}}, {{HTMLElement("section")}}, {{HTMLElement("header")}};
 - [Sections and outlines of an HTML document](/en-US/docs/Web/HTML/Element/Heading_Elements).

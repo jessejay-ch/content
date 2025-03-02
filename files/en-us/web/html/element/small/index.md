@@ -1,14 +1,7 @@
 ---
-title: '<small>: the side comment element'
+title: "<small>: the side comment element"
 slug: Web/HTML/Element/small
 page-type: html-element
-tags:
-  - Element
-  - HTML
-  - HTML text-level semantics
-  - Reference
-  - Web
-  - font-size
 browser-compat: html.elements.small
 ---
 
@@ -16,7 +9,29 @@ browser-compat: html.elements.small
 
 The **`<small>`** [HTML](/en-US/docs/Web/HTML) element represents side-comments and small print, like copyright and legal text, independent of its styled presentation. By default, it renders text within it one font-size smaller, such as from `small` to `x-small`.
 
-{{EmbedInteractiveExample("pages/tabbed/small.html", "tabbed-shorter")}}
+{{InteractiveExample("HTML Demo: &lt;small&gt;", "tabbed-shorter")}}
+
+```html interactive-example
+<p>
+  MDN Web Docs is a learning platform for Web technologies and the software that
+  powers the Web.
+</p>
+
+<hr />
+
+<p>
+  <small
+    >The content is licensed under a Creative Commons Attribution-ShareAlike 2.5
+    Generic License.</small
+  >
+</p>
+```
+
+```css interactive-example
+small {
+  font-size: 0.7em;
+}
+```
 
 ## Attributes
 
@@ -33,6 +48,8 @@ This element only includes the [global attributes](/en-US/docs/Web/HTML/Global_a
 </p>
 ```
 
+#### Result
+
 {{EmbedLiveSample("Basic_usage")}}
 
 ### CSS alternative
@@ -43,6 +60,8 @@ This element only includes the [global attributes](/en-US/docs/Web/HTML/Global_a
   <span style="font-size:0.8em">This whole sentence is in small letters.</span>
 </p>
 ```
+
+#### Result
 
 {{EmbedLiveSample("CSS_alternative")}}
 
@@ -55,20 +74,24 @@ Although the `<small>` element, like the {{htmlelement("b")}} and {{htmlelement(
 <table class="properties">
   <tbody>
     <tr>
-      <th scope="row">Content categories</th>
+      <th scope="row">
+        <a href="/en-US/docs/Web/HTML/Content_categories"
+          >Content categories</a
+        >
+      </th>
       <td>
-        <a href="/en-US/docs/Web/Guide/HTML/Content_categories#flow_content"
+        <a href="/en-US/docs/Web/HTML/Content_categories#flow_content"
           >Flow content</a
         >,
-        <a href="/en-US/docs/Web/Guide/HTML/Content_categories#phrasing_content"
+        <a href="/en-US/docs/Web/HTML/Content_categories#phrasing_content"
           >phrasing content</a
-        >
+        >.
       </td>
     </tr>
     <tr>
       <th scope="row">Permitted content</th>
       <td>
-        <a href="/en-US/docs/Web/Guide/HTML/Content_categories#phrasing_content"
+        <a href="/en-US/docs/Web/HTML/Content_categories#phrasing_content"
           >Phrasing content</a
         >
       </td>
@@ -81,10 +104,10 @@ Although the `<small>` element, like the {{htmlelement("b")}} and {{htmlelement(
       <th scope="row">Permitted parents</th>
       <td>
         Any element that accepts
-        <a href="/en-US/docs/Web/Guide/HTML/Content_categories#phrasing_content"
+        <a href="/en-US/docs/Web/HTML/Content_categories#phrasing_content"
           >phrasing content</a
         >, or any element that accepts
-        <a href="/en-US/docs/Web/Guide/HTML/Content_categories#flow_content"
+        <a href="/en-US/docs/Web/HTML/Content_categories#flow_content"
           >flow content</a
         >.
       </td>
@@ -92,8 +115,10 @@ Although the `<small>` element, like the {{htmlelement("b")}} and {{htmlelement(
     <tr>
       <th scope="row">Implicit ARIA role</th>
       <td>
-        <a href="https://www.w3.org/TR/html-aria/#dfn-no-corresponding-role"
-          >No corresponding role</a
+        <code
+          ><a href="/en-US/docs/Web/Accessibility/ARIA/Roles/generic_role"
+            >generic</a
+          ></code
         >
       </td>
     </tr>
